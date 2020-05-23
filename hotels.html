@@ -24,6 +24,58 @@
     </header>
     <main>
         <h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
+        <section class="hotelfilter">
+            <h2 class="visually-hidden">Фильтр отелей</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Инфраструктура</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="pool" id="pool" checked>
+                            <label for="pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="parking" id="parking">
+                            <label for="parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wi-fi" id="wi-fi">
+                            <label for="wi-fi">wi-fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="motel" id="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="apartments" id="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки</legend>
+                        <label for="min-price">от</label>
+                        <input type="number" name="min-price" id="min-price" placeholder="от 0" min="0">
+                        <label for="to3000">до</label>
+                        <input type="number" name="max-price" id="max-price" placeholder="до 3000" max="3000">
+                        <div>
+                            <button type="button"></button>
+                            <div><div>
+                            <button type="button"></button>
+                        </div> 
+                        <button type="submit">Показать</button>
+                </fieldset>
+            </form>
+        </section>
         <section class="sort">
             <h2>Найдено:3</h2>
             <h3>Сортировка:</h3>
