@@ -27,7 +27,11 @@
     height: 1px;
     margin: -1px;
 }
-
+body .container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 body {
     min-width: 1220px;
     margin: 0;
@@ -57,7 +61,6 @@ img {
     font-weight: bold;
     line-height: 26px;
     display: flex;
-    position: absolute;
     height: 70px;
     left: 40px;
 }
@@ -75,12 +78,13 @@ img {
     opacity: 0.3;
 }
 
-.site-navigation .active {
+.site-navigation .link--active {
     color: var(--basic-brown);
 }
 
 .intro {
     background-image: url(../img/backgroundsedona.jpg);
+    background-color: var(--light-gray);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
