@@ -31,8 +31,8 @@
             <section class="hotel-filter">
                 <h2 class="visually-hidden">Фильтр отелей</h2>
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                    <fieldset>
-                        <legend>Инфраструктура</legend>
+                    <fieldset class="left-column">
+                        <legend>Инфраструктура:</legend>
                         <ul>
                             <li>
                                 <input type="checkbox" name="pool" id="pool" checked>
@@ -48,8 +48,8 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Тип жилья</legend>
+                    <fieldset class="right-column">
+                        <legend>Тип жилья:</legend>
                         <ul>
                             <li>
                                 <input type="checkbox" name="hotel" id="hotel" checked>
@@ -65,8 +65,8 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Стоимость в сутки</legend>
+                    <fieldset class="price-column">
+                        <legend>Стоимость в сутки(Р):</legend>
                         <p>
                             <label>от<input type="number" name="min-price" id="min-price" min="0" value="0"></label>
                             <label>до<input type="number" name="max-price" id="max-price" max="3000" min="0"
