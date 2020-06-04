@@ -35,14 +35,11 @@
 
 body .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 body {
     min-width: 1220px;
-    margin: 0;
-    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -124,11 +121,11 @@ img {
     color: var(--basic-white);
 }
 
-.reasons-list-item p, .reasons-list-item span {
+.advantages-reason-1 p, .reasons-item.part-2 p, .reasons-item.part-2 span {
     color: var(--light-black);
 }
 
-.reasons-without-icons {
+.reasons-item.part-2 {
     background-color: var(--background-gray);
 }
 
@@ -151,8 +148,7 @@ li {
 /*hotel-search*/
 
 .hotel-search-button {
-    width: 568px;
-    height: 86px;
+    padding: 30px 124px 30px 125px;
     background-color: var(--basic-brown);
     color: var(--basic-white);
     font-weight: bold;
@@ -161,6 +157,7 @@ li {
     font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    border: 0;
 }
 
 .hotel-search-button:hover {
@@ -180,11 +177,10 @@ li {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
-    height: 100%;
 }
 
 .hotel-filter fieldset {
-    border: 0 none;
+    border: none;
     color: var(--basic-white);
 }
 
@@ -193,7 +189,25 @@ li {
     font-size: 16px;
 }
 
-.hotel-filter li {}
+.show-hotel-button {
+    padding: 8px 35px 7px 36px;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--basic-white);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid var(--basic-white);
+    border-radius: 2px;
+}
+
+.show-hotel-button:hover{
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+
 
 .sort h2 {
     font-weight: bold;
