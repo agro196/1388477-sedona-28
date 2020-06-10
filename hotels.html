@@ -33,52 +33,76 @@
                 <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="post">
                     <fieldset class="infrastructure-column">
                         <legend>Инфраструктура:</legend>
-                        <ul>
+                        <ul class="filter-list">
                             <li>
-                                <input type="checkbox" name="pool" id="pool" checked>
-                                <label for="pool">Бассейн</label>
+                                <label>
+                                    <input type="checkbox" class="visually-hidden  check-input" name="pool" id="pool"
+                                        checked>
+                                    <span class="check-box"></span>
+                                    Бассейн
+                                </label>
+                            </li>
+                            <li><label>
+                                    <input type="checkbox" class="visually-hidden check-input" name="parking"
+                                        id="parking">
+                                    <span class="check-box"></span>
+                                    Парковка
+                                </label>
                             </li>
                             <li>
-                                <input type="checkbox" name="parking" id="parking">
-                                <label for="parking">Парковка</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="wi-fi" id="wi-fi">
-                                <label for="wi-fi">wi-fi</label>
+                                <label>
+                                    <input type="checkbox" class="visually-hidden check-input" name="wi-fi" id="wi-fi">
+                                    <span class="check-box"></span>
+                                    wi-fi
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="accommodation-column">
                         <legend>Тип жилья:</legend>
-                        <ul>
+                        <ul class="filter-list">
                             <li>
-                                <input type="checkbox" name="hotel" id="hotel" checked>
-                                <label for="hotel">Гостиница</label>
+                                <label>
+                                    <input type="checkbox" class="visually-hidden check-input" name="hotel" id="hotel"
+                                        checked>
+                                    <span class="check-box"></span>
+                                    Гостиница
+                                </label>
                             </li>
                             <li>
-                                <input type="checkbox" name="motel" id="motel" checked>
-                                <label for="motel">Мотель</label>
+                                <label>
+                                    <input type="checkbox" class="visually-hidden check-input" name="motel" id="motel"
+                                        checked>
+                                    <span class="check-box"></span>
+                                    Мотель
+                                </label>
                             </li>
                             <li>
-                                <input type="checkbox" name="apartments" id="apartments" checked>
-                                <label for="apartments">Апартаменты</label>
+                                <label>
+                                    <input type="checkbox" class="visually-hidden check-input" name="apartments"
+                                        id="apartments" checked>
+                                    <span class="check-box"></span>
+                                    Апартаменты
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="price-column">
-                        <legend>Стоимость в сутки(Р):</legend>
-                        <p>
-                            <label>от<input type="number" name="min-price" id="min-price" min="0" value="0"></label>
-                            <label>до<input type="number" name="max-price" id="max-price" min="0" value=3000></label>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        <p class="price-controls">
+                            <label class="min-price">от <input type="number" name="min-price" id="min-price" min="0"
+                                    value="0">
+                            </label>
+                            <label class="max-price">до <input type="number" name="max-price" id="max-price" min="0"
+                                    value=3000>
+                            </label>
                         </p>
-                        <div>
-                            <div>
-                                <button type="button"></button>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
                             </div>
-                            <div></div>
-                            <div>
-                                <button type="button"></button>
-                            </div>
+                            <div class="toggle toggle-min" tabindex="0"></div>
+                            <div class="toggle toggle-max" tabindex="0"></div>
                         </div>
                         <button type="submit" class="show-hotel-button">Показать</button>
                     </fieldset>

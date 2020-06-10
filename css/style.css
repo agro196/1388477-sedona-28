@@ -248,6 +248,8 @@ li.reasons-item.part-2 {
 
 /*hotels*/
 
+/*hotel-filter*/
+
 .hotel-filter form {
     display: flex;
     padding-top: 26.5px;
@@ -258,20 +260,104 @@ li.reasons-item.part-2 {
 
 .hotel-filter-form .infrastructure-column {
     text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .hotel-filter-form .accommodation-column {
     text-align: left;
+    padding:0;
+    margin: 0 0 0 117px;
 }
 
 .hotel-filter-form .price-column {
-    margin-left: auto;
+    width: 316px;
+    margin:0 0 0 auto;
+    padding: 0;
 }
 .hotel-filter-form ul{
     padding: 0;
 }
 .price-column legend{
     text-align: left;
+}
+/*price-filter*/
+
+.price-controls{
+    position: relative;
+    margin-bottom: 20px;
+    margin-top:10px;
+    border: 2px solid var(--basic-white);
+    border-radius: 2px;
+    min-height: 36px;
+    height:36px
+}
+.price-controls input{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--basic-white);
+    width:50px;
+}
+
+.price-controls::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: var(--basic-white);
+    transform: translate(-50%,-50%);
+}
+
+.price-controls label{
+
+}
+
+.range-controls{
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.range-controls .scale{
+    height: 2px;
+    background-color:rgba(255,255,255,0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background-color: var(--basic-white) ;
+}
+.range-controls .toggle{
+    position: absolute;
+    top: -9px;
+    width: 19px;
+    height: 21px;
+    background-image: url(../img/filter-button.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+.toggle.toggle-max{
+    left:80%
+
+}
+
+.filter-list{
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.filter-list label{
+    padding-left: 39px;
+}
+.filter-list li{
+    margin-bottom: 25px;
+
 }
 
 .hotel-filter {
@@ -310,6 +396,28 @@ li.reasons-item.part-2 {
     background-color: var(--basic-white);
     color: var(--basic-black);
 }
+
+
+/*check-box*/
+
+.check-box{
+    position: absolute;
+    background-image: url(../img/checkbox-off.svg);
+    width: 27px;
+    height:23px;
+    background-repeat: no-repeat;
+    margin-left: -39px;
+
+    
+}
+
+/*checked*/
+
+.check-input:checked + .check-box{
+    background-image: url(../img/checkbox-on.svg);
+}
+
+/*sort*/
 
 .sort h2 {
     font-weight: bold;
