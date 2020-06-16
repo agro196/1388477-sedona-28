@@ -865,6 +865,7 @@ button.amount-minus:active::before{
 .rating .stars {
   display: flex;
   justify-content: flex-end;
+  padding:0;
 }
 
 .stars .star-item {
