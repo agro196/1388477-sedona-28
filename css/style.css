@@ -704,7 +704,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 }
 
 .check-input:focus+.check-box {
-  border: 2px solid var(--dark-blue);
+  outline: -webkit-focus-ring-color auto 1px;
 }
 
 /*checked*/
