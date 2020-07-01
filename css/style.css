@@ -2,9 +2,12 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-op3:rgba(0, 0, 0, 0.3);
   --light-black: #333333;
   --black-brown: #231F20;
   --basic-white: #ffffff;
+  --basic-white-op3:rgba(255, 255, 255, 0.3);
+  --basic-white-op0:rgba(255, 255, 255, 0);
   --basic-gray: #CACACA;
   --light-gray: #F2F2F2;
   --border-gray: #E5E5E5;
@@ -17,9 +20,17 @@
   --basic-brown: #766357;
   --dark-brown: #604E43;
   --darkest-brown: #503E33;
+  --rust-brown: #b7410e;
+  --peru-brown: #CD853F;
   --basic-blue: #81B3D2;
   --dark-blue: #669EC0;
   --darkest-blue: #5496BD;
+  --dusty-blue: #b0e0e6;
+  --celadon: #ace1af;
+  --emerald: #50c878;
+  --main-footer-background: rgba(255, 255, 255, 0.9);
+  --body-shadow: rgba(0, 1, 1, 0.2);
+  --hotel-form-shadow: rgba(0, 1, 1, 0.15);
 }
 
 /* Global */
@@ -38,7 +49,7 @@
 
 body .container {
   background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--body-shadow);
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -136,7 +147,7 @@ div .page-body {
 
 .intro {
   background-image: url(../img/backgroundsedona.jpg);
-  background-color: var(--aluminium);
+  background-color: var(--dusty-blue);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -243,13 +254,13 @@ div.reasons-text {
   margin: 0px;
 }
 
-li.reasons-item.part-1 {
+.reasons-item.part-1 {
   display: flex;
   flex-wrap: wrap;
 }
 
-li.reasons-item.part-1 img {
-  background-color: var(--aluminium);
+.reasons-item.part-1 img {
+  background-color: var(--rust-brown);
 }
 
 .advantages-reason-1 {
@@ -360,7 +371,7 @@ li.reasons-item.part-1 img {
 
 .hotel-search-button:active {
   background-color: var(--darkest-brown);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-op3);
 }
 
 /* .hotel-search-form*/
@@ -373,11 +384,15 @@ li.reasons-item.part-1 img {
   transform: translateY(-100%);
 }
 
+.form-error {
+  animation: shake 0.6s;
+}
+
 .hotel-search-form {
   padding: 55px;
   line-height: 26px;
   font-weight: bold;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px var(--hotel-form-shadow);
   right: 0;
   width: 568px;
   background-color: var(--basic-white);
@@ -538,7 +553,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 }
 
 .hotel-search-form-submit:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-op3);
   background-color: var(--darkest-blue);
 }
 
@@ -599,7 +614,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .price-controls input {
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: var(--basic-white-op0);
   color: var(--basic-white);
   width: 50px;
 }
@@ -630,7 +645,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .range-controls .scale {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-white-op3);
 }
 
 .range-controls .bar {
@@ -676,7 +691,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .hotel-filter {
   background-image: url(../img/hotelsbackground.png);
-  background-color: var(--light-gray);
+  background-color: var(--peru-brown);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -695,7 +710,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 .show-hotel-button {
   margin-left: -11px;
   padding: 3px 35px 8px 35px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: var(--basic-white-op0);
   color: var(--basic-white);
   font-weight: normal;
   font-size: 14px;
@@ -759,7 +774,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 .sort .link {
   font-size: 12px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black-op3);
   border-bottom: 1px dashed var(--basic-blue)
 }
 
@@ -846,7 +861,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .more-detailed-link:active {
   background-color: var(--darkest-blue);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-op3);
 }
 
 .book-link {
@@ -862,7 +877,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .book-link:active {
   background-color: var(--darkest-brown);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-op3);
 }
 
 .hotel-item {
@@ -875,7 +890,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 }
 
 .hotel-item img {
-  background-color: var(--aluminium);
+  background-color: var(--emerald);
 }
 
 .hotel-image {
@@ -993,7 +1008,7 @@ section.sort {
   background-image: url(../img/map.png);
   height: 593px;
   background-size: 100%;
-  background-color: var(--aluminium)
+  background-color: var(--celadon)
 }
 
 .map iframe {
@@ -1022,7 +1037,7 @@ section.sort {
   bottom: 0;
   width: 1200px;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--main-footer-background);
   padding-left: 127px;
   padding-right: 138px;
   padding-bottom: 36px;
@@ -1124,4 +1139,18 @@ section.sort {
 
 .soc-networks .twitter:active::before, .soc-networks .facebook:active::before, .soc-networks .youtube:active::before {
   opacity: 0.3;
+}
+
+/*Animation*/
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
