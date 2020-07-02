@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
   <div class="container page-body">
     <header class="main-header">
@@ -40,7 +38,8 @@
                   Бассейн
                 </label>
               </li>
-              <li><label>
+              <li>
+                <label>
                   <input type="checkbox" class="visually-hidden check-input" name="parking" id="parking">
                   <span class="check-box"></span>
                   Парковка
@@ -93,8 +92,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
+              <div class="toggle toggle-min" tabindex="0" aria-label="Изменить минимальную стоимоть в сутки"></div>
+              <div class="toggle toggle-max" tabindex="0" aria-label="Изменить максимальную стоимость в сутки"></div>
             </div>
             <button type="submit" class="show-hotel-button">Показать</button>
           </fieldset>
@@ -109,10 +108,9 @@
           <li><a href="" class="link">По рейтингу</a></li>
         </ul>
         <ul class="sort-arrow-list">
-          <li><a class="sort-arrow-up" href=""><span class="visually-hidden">up</span></a></li>
-          <li class="sort-arrow-down link--active"><span class="visually-hidden">down</span></li>
+          <li><a class="sort-arrow-up" href=""><span class="visually-hidden">По возрастанию</span></a></li>
+          <li class="sort-arrow-down link--active"><span class="visually-hidden">По убыванию</span></li>
         </ul>
-
       </section>
       <section class="search-result">
         <h2 class="visually-hidden">Результат поиска</h2>
@@ -132,7 +130,6 @@
                 <a href="" class="book-link">Забронировать</a>
               </p>
             </div>
-
             <div class="rating">
               <ul class="stars">
                 <li class="star-item"></li>
@@ -166,7 +163,6 @@
               </ul>
               <span class="rating-value">Рейтинг: 8,9</span>
             </div>
-
           </li>
           <li class="hotel-item">
             <a href="" class="hotel-image">
@@ -197,9 +193,7 @@
     <footer class="main-footer footer-hotels">
       <p class="contacts">
         <span>#VISITSEDONA</span>
-        <span>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66
-          </a>
-        </span>
+        <span>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></span>
       </p>
       <ul class="soc-networks">
         <li>
@@ -228,5 +222,4 @@
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>

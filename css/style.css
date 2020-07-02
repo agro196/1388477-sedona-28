@@ -258,10 +258,12 @@ div.reasons-text {
 .reasons-item.part-1 {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--basic-blue);
 }
 
 .reasons-item.part-1 img {
   background-color: var(--rust-brown);
+  height: 256px;
 }
 
 .advantages-reason-1 {
@@ -269,6 +271,7 @@ div.reasons-text {
   flex-wrap: wrap;
   padding-left: 0px;
   list-style: none;
+  background-color: var(--basic-white);
 }
 
 .advantages-reason-1 .reasons-item {
@@ -444,6 +447,7 @@ div.reasons-text {
 
 .hotel-search-form input:focus {
   background-color: var(--basic-white);
+  outline: 2px solid var(--border-gray);
 }
 
 .calendar-button {
@@ -566,7 +570,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .hotel-filter form {
   display: flex;
-  padding-top: 26.5px;
+  padding-top: 26px;
   padding-bottom: 32px;
   padding-left: 72px;
   padding-right: 73px;
@@ -710,7 +714,7 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 
 .show-hotel-button {
   margin-left: -11px;
-  padding: 3px 35px 8px 35px;
+  padding: 5px 35px 5px 35px;
   background-color: var(--basic-white-op0);
   color: var(--basic-white);
   font-weight: normal;
@@ -792,7 +796,6 @@ button.amount-plus:active::before, button.amount-plus:active::after, button.amou
 .sort .link--active {
   color: var(--basic-blue);
   font-size: 12px;
-  line-height: 18px;
 }
 
 .sort-arrow-up {
@@ -984,6 +987,7 @@ section.sort {
 
 .sort-type-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
